@@ -30,6 +30,8 @@ import { FooterComponent } from './Users/Shared/footer/footer.component';
 import { BannerComponent } from './Users/Shared/banner/banner.component';
 import { UsersHomeComponent } from './Users/users-home/users-home.component';
 import { UsersPricingPlansComponent } from './Users/users-pricing-plans/users-pricing-plans.component';
+import { PermissibleHeight } from './Users/permissible-height/permissible-height.component';
+import { ForgotPasswordComponent } from './Users/forgot-password/forgot-password.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,9 @@ import { UsersPricingPlansComponent } from './Users/users-pricing-plans/users-pr
     FooterComponent,
     BannerComponent,
     UsersHomeComponent,
-    UsersPricingPlansComponent
+    UsersPricingPlansComponent,
+    PermissibleHeight,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -57,8 +61,8 @@ import { UsersPricingPlansComponent } from './Users/users-pricing-plans/users-pr
     MatIconModule,
     MatListModule,
     MatToolbarModule,
-    FormsModule,
-    ReactiveFormsModule,
+    FormsModule, // Import FormsModule
+    ReactiveFormsModule, // Import ReactiveFormsModule
     MatCardModule,
     MatDialogModule,
     MatInputModule,

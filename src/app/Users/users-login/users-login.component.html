@@ -5,12 +5,12 @@
             <h1>Log In</h1>
             <p>It's not long before you embark on this journey! </p>
 
-            <form class="flex-c" [formGroup]="LogInForm" novalidate (ngSubmit)="onsubmit()">
+            <form class="flex-c" [formGroup]="LogInForm"  (ngSubmit)="login()">
                 <div class="input-box">
                     <span class="label">E-mail</span>
                     <div class=" flex-r input">
-                        <input type="email" placeholder="name@abc.com" formControlName="email" autocomplete="email"
-                            id="email" required>
+                        <input type="email" placeholder="name@abc.com" name="email" formControlName="email" autocomplete="email"
+                            id="email" required >
                         <i class="bi bi-envelope-at-fill"></i>
 
                     </div>
@@ -35,7 +35,7 @@
                     <span class="label">Password</span>
                     <div class="flex-r input">
                         <input type="password" [type]="showPassword ? 'text' : 'password'" id="password"
-                            autocomplete="password" formControlName="password" placeholder="8+ (a, A, 1, #)">
+                            autocomplete="password" name="password" formControlName="password" placeholder="8+ (a, A, 1, #)">
                         <span> <i class="bi " [ngClass]="{
                   'bi-eye-slash-fill': !showPassword,
                   'bi-eye-fill': showPassword}" (click)="togglePasswordVisibility()"></i></span>
