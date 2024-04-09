@@ -30,6 +30,9 @@ import { FooterComponent } from './Users/Shared/footer/footer.component';
 import { BannerComponent } from './Users/Shared/banner/banner.component';
 import { UsersHomeComponent } from './Users/users-home/users-home.component';
 import { UsersPricingPlansComponent } from './Users/users-pricing-plans/users-pricing-plans.component';
+import { UsersEditUpdateComponent } from './Users/users-edit-update/users-edit-update.component';
+import { UsersNOCASComponent } from './Users/users-nocas/users-nocas.component';
+import { ForgotPasswordComponent } from './Users/forgot-password/forgot-password.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +43,10 @@ import { UsersPricingPlansComponent } from './Users/users-pricing-plans/users-pr
     FooterComponent,
     BannerComponent,
     UsersHomeComponent,
-    UsersPricingPlansComponent
+    UsersPricingPlansComponent,
+    UsersEditUpdateComponent,
+    UsersNOCASComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
