@@ -5,7 +5,8 @@ import { UsersRegisterComponent } from './Users/users-register/users-register.co
 import { UsersLoginComponent } from './Users/users-login/users-login.component';
 import { UsersProfileComponent } from './Users/users-profile/users-profile.component';
 import { UsersPricingPlansComponent } from './Users/users-pricing-plans/users-pricing-plans.component';
-import { PermissibleHeight } from './Users/permissible-height/permissible-height.component';
+// import { PermissibleHeight } from './Users/permissible-height/permissible-height.component';
+import { UsersNOCASComponent } from './Users/users-nocas/users-nocas.component';
 import { ForgotPasswordComponent } from './Users/forgot-password/forgot-password.component';
 
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'UsersLogin', component: UsersLoginComponent },
   { path: 'UsersProfile', component: UsersProfileComponent },
   { path: 'PricingPlans', component: UsersPricingPlansComponent },
-  {path:'permissible-height',component:PermissibleHeight},
+  // {path:'permissible-height',component:PermissibleHeight},
+  { path: 'C_NOCAS-MAP', component: UsersNOCASComponent },
   { path: 'forgot-pass', component: ForgotPasswordComponent },
 ];
 

@@ -30,7 +30,9 @@ import { FooterComponent } from './Users/Shared/footer/footer.component';
 import { BannerComponent } from './Users/Shared/banner/banner.component';
 import { UsersHomeComponent } from './Users/users-home/users-home.component';
 import { UsersPricingPlansComponent } from './Users/users-pricing-plans/users-pricing-plans.component';
-import { PermissibleHeight } from './Users/permissible-height/permissible-height.component';
+// import { PermissibleHeight } from './Users/permissible-height/permissible-height.component';
+import { UsersEditUpdateComponent } from './Users/users-edit-update/users-edit-update.component';
+import { UsersNOCASComponent } from './Users/users-nocas/users-nocas.component';
 import { ForgotPasswordComponent } from './Users/forgot-password/forgot-password.component';
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ForgotPasswordComponent } from './Users/forgot-password/forgot-password
     BannerComponent,
     UsersHomeComponent,
     UsersPricingPlansComponent,
-    PermissibleHeight,
+    // PermissibleHeight,
+    UsersEditUpdateComponent,
+    UsersNOCASComponent,
     ForgotPasswordComponent
   ],
   imports: [

@@ -1,58 +1,96 @@
-.footer {
-    background-color: #1f4467;
-    padding: 5px 0;
-    // position: fixed;
-   
+p {
+    color: #111827;
 }
 
-.footer__title {
-    font-size: 18px;
-    margin: 0;
-    margin-left: 0px;
-    margin-left: 10px;
+footer {
+    left: 0;
+    bottom: 0;
+    /*-------*/
+    width: 100%;
+    background-color: #fff;
+    cursor: default;
+}
+
+
+.inside__footer {
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    text-align: left;
+    color: #a9a9a9;
+    font-size: 16px;
+    order: 1;
+    margin-bottom: 0;
+}
+
+.social {
+    order: 2;
+    margin-bottom: 0;
+}
+
+.icon {
     display: inline-block;
-    line-height: 18px;
-    vertical-align: middle;
-    color: #5465e2;
+    margin-left: 20px;
+    fill: darkgray;
+    transition: fill 0.15s, filter 0.15s;
 }
 
-.footer__light {
-    color: #fff;
+.icon:first-child {
+    margin-right: 0;
 }
 
-.footer__social {
-    float: right;
+.linkedin:hover {
+    fill: blue;
 }
 
-.footer__social-l {
-    margin-left: 15px;
-    vertical-align: middle;
+.instagram:hover {
+    fill: red;
 }
 
-@media screen and (max-width:767px) {
-    .footer {
-        padding: 25px 0;
+.twitter:hover {
+    fill: black;
+}
+
+.icon:active {
+    filter: brightness(70%);
+}
+a{
+    color: darkgray;
+    text-decoration:none
+}
+a:hover {
+    color: #3b5998;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .inside__footer {
+        /*use flex-direction, because if you change it to Block it'll never allow Order to work*/
+        flex-direction: column;
+    }
+
+    .copyright {
+        font-size: 14px;
+        text-align: center;
+        order: 2;
+        margin-bottom: 4px;
+    }
+
+    .social {
+        order: 1;
+        margin-bottom: 4px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        transition: fill 0s, filter 0s;
     }
 }
-
-.footer__img {
-    width: 30px;
-}
-
-@media screen and (max-width:480px) {
-    .footer {
-        padding: 15px 0;
-    }
-
-    .footer__img {
-        width: 15px;
-    }
-
-    .footer__title {
-        font-size: 16px;
-        margin-left: 5px;
-    }
-}
-
-
-
